@@ -5,10 +5,6 @@ rem  Steps: fetch deps (cached) -> verify Zhihu APK MD5 ->
 rem         re-whitelist signer cert inside Zhiliao module ->
 rem         LSPatch embeds Zhiliao -> output patched APK
 rem  Requires: Java 21+ and Python 3 on PATH
-rem
-rem  Tested: LDPlayer9 emulator crashes at splash (x86_64+houdini
-rem  translation breaks LSPatch native hooking) - real arm64
-rem  devices are the supported target, see README.
 rem ============================================================
 setlocal enabledelayedexpansion
 
@@ -92,7 +88,5 @@ echo ============================================
 echo  Done! Patched APK is in %OUT_DIR%
 echo  Install: uninstall stock Zhihu first, then install the
 echo  patched APK, and disable auto-update for Zhihu.
-echo  NOTE: real arm64 device required - emulators (x86_64
-echo  translation) crash on the native hook layer.
 echo ============================================
 endlocal
