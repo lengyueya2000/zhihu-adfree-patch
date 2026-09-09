@@ -1,0 +1,14 @@
+# 构建产物
+output/
+*.apk
+
+# 下载缓存
+cache/
+
+# 日志
+*.log
+
+# 临时文件
+*.tmp
+.idea/
+.vscode/
